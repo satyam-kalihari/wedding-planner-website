@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import LenisProvider from "@/components/LenisProvider";
+import localFont from "next/font/local";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -11,6 +13,18 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+
+const cormorant = localFont({
+  src: "../../public/fonts/Cormorant-VariableFont_wght.ttf",
+  variable: "--font-cormorant-nova",
+});
+
+const cormorantGaramond = localFont({
+  src: "../../public/fonts/CormorantGaramond-VariableFont_wght.ttf",
+  variable: "--font-cormorant-garamond",
+});
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,9 +39,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${cormorant.variable} ${cormorantGaramond.variable} antialiased`}
       >
-        {children}
+        <LenisProvider>{children}</LenisProvider>
       </body>
     </html>
   );
