@@ -29,7 +29,7 @@ export const OurServices = () => {
   return (
     <>
       <div className="min-h-[100vh] pt-6 w-full flex flex-col p-5 md:p-[40px] lg:p-[80px] items-center justify-center gap-12">
-        <motion.div className=" text-7xl text-[#1F2937] overflow-hidden">
+        <motion.div className="text-5xl md:text-7xl text-[#1F2937] overflow-hidden">
           Our Services
           <motion.div
             initial={{ scaleX: 0 }}
