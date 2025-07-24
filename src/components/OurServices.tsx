@@ -37,6 +37,10 @@ export const OurServices = () => {
             className="h-[4px] w-[70%] bg-[#ea5285] mt-5 ml-2 rounded-b-xs"
           ></motion.div>
         </motion.div>
+        <div className="text-[#1F2937] text-center">
+          From comprehensive planning to day-of coordination, we offer a range
+          of services tailored to your unique needs and vision.
+        </div>
         <div className="flex flex-col md:flex-row gap-8">
           {services.map((service, index) => (
             <div key={index}>
