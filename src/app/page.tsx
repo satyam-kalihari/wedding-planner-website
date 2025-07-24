@@ -3,6 +3,7 @@
 import Hero from "@/components/Hero";
 import { OurServices } from "@/components/OurServices";
 import OurStory from "@/components/OurStory";
+import { Portfolio } from "@/components/Portfolio";
 
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <OurStory />
       <OurServices />
+      <Portfolio />
     </div>
   );
 }
