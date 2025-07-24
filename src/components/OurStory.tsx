@@ -8,7 +8,11 @@ const OurStory = () => {
         <div className=" flex flex-col items-center  p-5 md:items-start md:w-[80vw] justify-top gap-4">
           <motion.div className=" text-7xl text-[#1F2937] overflow-hidden">
             Our Story
-            <motion.div initial={{ scaleX: 0 }} animate={{ scaleX: 1, transition:{duration:3}}} className="h-[4px] w-[70%] bg-[#ea5285] mt-1 ml-2 rounded-b-xs"></motion.div>
+            <motion.div
+              initial={{ scaleX: 0 }}
+              animate={{ scaleX: 1, transition: { duration: 3 } }}
+              className="h-[4px] w-[70%] bg-[#ea5285] mt-1 ml-2 rounded-b-xs"
+            ></motion.div>
           </motion.div>
           <p className="mt-5 py-5 text-left text-[#374151]">
             At Perfect Wedding, we believe that your special day should be as
