@@ -1,5 +1,6 @@
+import { motion } from "motion/react";
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+
 
 // Define images and topics outside the component to prevent recreation on every render.
 const allImages = {

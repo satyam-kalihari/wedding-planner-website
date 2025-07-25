@@ -28,3 +28,7 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
 }
+
+#reviews::-webkit-scrollbar {
+  display: none; /* or width: 0; */
+}
