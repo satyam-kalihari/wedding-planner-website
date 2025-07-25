@@ -49,7 +49,7 @@ export const OurServices = () => {
                   className="h-[50%] w-full bg-no-repeat bg-cover bg-center"
                   style={{ backgroundImage: `url(${service.image})` }}
                 ></div>
-                <div className="bg-red-400 h-[64px] w-[64px] flex items-center justify-center absolute top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%] rounded-full">
+                <div className="bg-[#ea5285] h-[64px] w-[64px] flex items-center justify-center absolute top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%] rounded-full">
                   <Image src={service.icon} width={18} height={32} alt="icon" />
                 </div>
                 <div className="p-6 mt-2 flex flex-col gap-4">
@@ -58,7 +58,7 @@ export const OurServices = () => {
                       {service.heading}
                     </h3>
                   </div>
-                  <p className="text-gray-600 text-lg">{service.description}</p>
+                  <p className="text-gray-600">{service.description}</p>
                   <button className="h-[40px] px-2 border-2 rounded-xs border-[#ea5285]  text-[#ea5285]">
                     Request a Quote
                   </button>
