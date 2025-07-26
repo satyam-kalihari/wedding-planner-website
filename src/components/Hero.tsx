@@ -9,7 +9,7 @@ const Hero = () => {
       className="h-[100vh] w-full flex flex-col gap-8 items-center justify-center bg-[url(/images/hero-image-3.jpg)] md:bg-[url(/images/hero-image-3.jpg)] md:bg-fixed bg-cover bg-center bg-no-repeat "
     >
       <motion.div className="text-center text-5xl md:text-7xl text-[#fffbeb] font-sans font-extrabold">
-        Your Dream Wedding,
+        Your Dream Event And Wedding,
         <br />
         Perfectly Planned
       </motion.div>

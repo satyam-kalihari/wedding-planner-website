@@ -5,24 +5,24 @@ import React from "react";
 const reviews = [
   {
     content:
-      "Perfect Wedding truly lived up to their name. From our first meeting to the final dance, they were attentive, creative, and kept us stress-free throughout the entire planning process.",
+      "They have completely justified their organisation name” Perfect events and wedding planner “. Entire arrangement was done flawlessly. Thank you so much for making the function memorable.",
     image: "/images/kind-words-image-1.jpg",
-    name: "Sarah M.",
-    date: "June 2023",
+    name: "Konica Bhardwaj",
+    date: "April 2025",
   },
   {
     content:
-      "Our destination wedding seemed impossible to plan from overseas, but the team at Perfect Wedding made it seamless. Their attention to detail and ability to anticipate our needs was remarkable.",
+      "Working with Oshin and team made our wedding planning stress-free! From the initial consultation to the big day, they handled everything seamlessly, allowing us to enjoy every moment. Highly recommended!",
     image: "/images/kind-words-image-2.jpg",
-    name: "Thomas R.",
-    date: "March 2023",
+    name: "Monika Dongre",
+    date: "2024",
   },
   {
     content:
-      "Hiring Perfect Wedding for day-of coordination was the best decision we made. They stepped in seamlessly, handled every detail, and allowed us to be fully present on our special day.",
+      "Trust worthy. Oshin personally ensured that both the planning process and the day itself felt effortless for us, so we could focus on making memories . Perfect events team was our wedding angel and we cannot recommend her more highly.",
     image: "/images/kind-words-image-3.jpg",
-    name: "Emily K.",
-    date: "September 2023",
+    name: "ASHWINI RATHOD",
+    date: "2024",
   },
 ];
 

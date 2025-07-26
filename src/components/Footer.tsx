@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-2xl font-semibold mb-4 text-pink-300">
-              PerfectEvent<br/> Weddings
+              PerfectEvent &<br/> Weddings
             </h3>
             <p className="text-gray-300 text-sm">
               Crafting unforgettable moments and making your wedding dreams a

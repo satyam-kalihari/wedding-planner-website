@@ -25,7 +25,7 @@ const OurStory = () => {
             planners works tirelessly to transform your vision into reality.
           </p>
           <p className="py-4 text-left text-[#374151]">
-            With over a decade of experience in the wedding industry, we&apos;ve
+            With over half a decade of experience in the wedding industry, we&apos;ve
             cultivated relationships with the finest vendors and venues,
             ensuring that every element of your celebration exceeds
             expectations. From intimate gatherings to grand affairs, we approach

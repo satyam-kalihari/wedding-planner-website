@@ -10,7 +10,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-cormorant-garamond);
   --font-mono: var(--font-geist-mono);
-  --font-serif: var(--font-cormorant-nova);
+  --font-serif: var(--font-cormorant);
   /* fontfamily: {
     'serif-garamond':['var(--font-cormorant-garamond)'], ;
   } */
