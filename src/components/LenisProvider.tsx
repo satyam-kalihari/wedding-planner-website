@@ -17,11 +17,11 @@ export default function LenisProvider({ children }: LenisProviderProps) {
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Custom easing function
       direction: "vertical", // 'vertical' or 'horizontal'
       gestureDirection: "vertical", // 'vertical' or 'horizontal'
-      smooth: true,
       mouseMultiplier: 1, // How much the mouse wheel scrolls
       smoothTouch: false, // Smooth scrolling on touch devices
       touchMultiplier: 2,
       infinite: false, // For infinite scrolling
+      anchors: true, // Enable smooth scrolling for anchor links
     });
 
     // Add event listener for scroll

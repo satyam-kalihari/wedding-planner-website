@@ -1,9 +1,13 @@
 import { motion } from "motion/react";
 import Image from "next/image";
 import React from "react";
-import ContactForm from "./ContectForm";
+import ContactForm from "./ContactForm";
 
 const ContactUs = () => {
+  const instaLink =
+    "https://www.instagram.com/nagpurs_perfect_weddingplanner?igsh=MXR0aGduMXM0ZzhicQ== ";
+  const googleLink = "https://g.co/kgs/TuRshJ";
+  
   return (
     <div
       id="contact"
@@ -15,7 +19,7 @@ const ContactUs = () => {
         </h1>
         <motion.div
           initial={{ scaleX: 0 }}
-          animate={{ scaleX: 1, transition: { duration: 3 } }}
+          whileInView={{ scaleX: 1, transition: { duration: 3 } }}
           className="h-[4px] w-[70%] bg-[#ea5285]  mt-5 ml-2 rounded-b-xs"
         ></motion.div>
       </div>
@@ -23,19 +27,20 @@ const ContactUs = () => {
         Ready to start planning? Reach out to us for a complimentary
         consultation.
       </p>
-      <div className="flex flex-col md:flex-row gap-8 w-full  md:h-[600px] text-[#374151]">
+      <div className="flex flex-col md:flex-row gap-8 w-full text-[#374151]">
         {/* CONTACT FORM  */}
         <div className=" w-full md:w-[50%] ">
           <ContactForm />
         </div>
 
         {/* CONTACT INFO */}
-        <div className="w-full md:w-[50%] bg-red-50 p-8 flex flex-col gap-4 rounded-xs">
+        <div className="w-full md:w-[50%] bg-red-50 p-8 flex flex-col gap-6 rounded-xs">
           <h2 className="text-2xl text-[#1F2937] font-normal text-center rounded-xs">
             Contact Information
           </h2>
           <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-4">
+              {/* MAIL */}
               <div className="flex gap-4 items-center">
                 <div className="bg-[#ea5285] h-[32px] w-[32px] md:h-[64px] md:w-[64px] flex items-center justify-center rounded-full">
                   <Image
@@ -50,6 +55,7 @@ const ContactUs = () => {
                   <p>hello@perfectwedding.com</p>
                 </div>
               </div>
+              {/* PHONE */}
               <div className="flex gap-4 items-center">
                 <div className="bg-[#ea5285] h-[32px] w-[32px] md:h-[64px] md:w-[64px] flex items-center justify-center rounded-full">
                   <Image
@@ -61,11 +67,12 @@ const ContactUs = () => {
                 </div>
                 <div>
                   <h3 className="text-[#1F2937]">Phone</h3>
-                  <p>(555) 123-4567</p>
+                  <p>+91 9665510693</p>
                 </div>
               </div>
             </div>
             <div className="flex flex-col gap-4">
+              {/* LOCATION */}
               <div className="flex gap-4 items-center">
                 <div className="bg-[#ea5285] h-[32px] w-[32px] md:h-[64px] md:w-[64px] flex items-center justify-center rounded-full">
                   <Image
@@ -83,6 +90,7 @@ const ContactUs = () => {
                   </p>
                 </div>
               </div>
+              {/* HOURS */}
               <div className="flex gap-4 items-center">
                 <div className="bg-[#ea5285] h-[32px] w-[32px] md:h-[64px] md:w-[64px] flex items-center justify-center rounded-full">
                   <Image
@@ -111,6 +119,7 @@ const ContactUs = () => {
             ></motion.div>
             <div className="flex justify-center items-center gap-8">
               <motion.div
+                onClick={() => window.open(instaLink, "_blank")}
                 className="bg-[#ea5285] shadow-lg shadow-gray-400 h-[32px] w-[32px] md:h-[64px] md:w-[64px] flex items-center justify-center rounded-full"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -123,6 +132,7 @@ const ContactUs = () => {
                 />
               </motion.div>
               <motion.div
+                onClick={() => window.open("", "_blank")}
                 className="bg-[#ea5285] shadow-lg shadow-gray-400 h-[32px] w-[32px] md:h-[64px] md:w-[64px] flex items-center justify-center rounded-full"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -135,12 +145,13 @@ const ContactUs = () => {
                 />
               </motion.div>
               <motion.div
+                onClick={() => window.open(googleLink, "_blank")}
                 className="bg-[#ea5285] shadow-lg shadow-gray-400 h-[32px] w-[32px] md:h-[64px] md:w-[64px] flex items-center justify-center rounded-full"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <Image
-                  src={"/icons/printrest.svg"}
+                  src={"/icons/google.svg"}
                   width={18}
                   height={32}
                   alt="icon"

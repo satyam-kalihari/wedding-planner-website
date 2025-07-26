@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import Link from "next/link";
 import React from "react";
 
 const Hero = () => {
@@ -16,15 +17,24 @@ const Hero = () => {
         Crafting Unforgettable Moments, One Wedding at a Time
       </motion.div>
       <motion.div className="flex items-center justify-center gap-8">
-        <motion.div
-          whileHover={{ scale: 1.2 }}
-          className="bg-[#ea5285] p-0.5 px-1.5 rounded-xs border-2 border-[#ea5285] "
-        >
-          Discover Our Services
-        </motion.div>
-        <motion.div className=" border-2 border-[#fffbeb] p-0.5 px-1.5 rounded-xs backdrop-blur-xs ">
-          <p className="">View Our Work</p>
-        </motion.div>
+        <Link className="cursor-default" href={"#services"}>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="bg-[#ea5285] cursor-default p-0.5 px-1.5 rounded-xs border-2 border-[#ea5285] "
+          >
+            Discover Our Services
+          </motion.div>
+        </Link>
+        <Link className="cursor-default" href={"#portfolio"}>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="border-2 border-[#fffbeb] p-0.5 px-1.5 rounded-xs backdrop-blur-xs "
+          >
+            View Our Work
+          </motion.div>
+        </Link>
       </motion.div>
     </div>
   );

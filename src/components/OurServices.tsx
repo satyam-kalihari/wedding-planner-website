@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import Image from "next/image";
+import Link from "next/link";
 
 export const OurServices = () => {
   const services = [
@@ -36,7 +37,7 @@ export const OurServices = () => {
           Our Services
           <motion.div
             initial={{ scaleX: 0 }}
-            animate={{ scaleX: 1, transition: { duration: 3 } }}
+            whileInView={{ scaleX: 1, transition: { duration: 3 } }}
             className="h-[4px] w-[70%] bg-[#ea5285] mt-5 ml-2 rounded-b-xs"
           ></motion.div>
         </motion.div>
@@ -62,9 +63,14 @@ export const OurServices = () => {
                     </h3>
                   </div>
                   <p className="text-gray-600">{service.description}</p>
-                  <button className="h-[40px] px-2 border-2 rounded-xs border-[#ea5285]  text-[#ea5285]">
-                    Request a Quote
-                  </button>
+                  <motion.div className="h-[40px] px-2 border-2 rounded-xs border-[#ea5285]  text-[#ea5285]">
+                    <Link
+                      href={"#contact"}
+                      className="cursor-default h-full w-full flex items-center justify-center"
+                    >
+                      Request a Quote
+                    </Link>
+                  </motion.div>
                 </div>
               </div>
             </div>
@@ -90,7 +96,12 @@ export const OurServices = () => {
               but for every guest who joins your celebration.
             </p>
             <button className="h-[40px] md:w-[200px] px-2 border-2 rounded-xs bg-[#ea5285] border-[#ea5285]  text-white">
-              Request a Quote
+              <Link
+                href={"#contact"}
+                className="cursor-default h-full w-full flex items-center justify-center"
+              >
+                Request a Quote
+              </Link>
             </button>
           </div>
         </div>

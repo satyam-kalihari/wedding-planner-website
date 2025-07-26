@@ -14,6 +14,20 @@ export default function ContactForm() {
     vision: "",
   });
 
+  const message = `Hello! I'm interested in your wedding planning services.
+
+Here are my details:
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Prospective Wedding Date: ${formData.weddingDate || "Not decided yet"}
+Service of Interest: ${formData.service || "Not specified"}
+
+Our vision for the day:
+${formData.vision}
+
+I'm looking forward to hearing from you!`;
+
   const handleInputChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
@@ -28,8 +42,11 @@ export default function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const whatsappLink = `https://wa.me/919665510693?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(whatsappLink, "_blank");
     console.log("Form submitted:", formData);
-    // Handle form submission here
   };
 
   return (
@@ -48,6 +65,7 @@ export default function ContactForm() {
               type="text"
               id="name"
               name="name"
+              required
               value={formData.name}
               onChange={handleInputChange}
               className="w-full px-3 py-3 border border-gray-300 rounded-xs focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"
@@ -84,6 +102,7 @@ export default function ContactForm() {
               type="tel"
               id="phone"
               name="phone"
+              required
               value={formData.phone}
               onChange={handleInputChange}
               className="w-full px-3 py-3 border border-gray-300 rounded-xs focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"

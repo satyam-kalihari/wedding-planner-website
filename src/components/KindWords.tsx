@@ -38,7 +38,7 @@ const KindWords = () => {
         </h1>
         <motion.div
           initial={{ scaleX: 0 }}
-          animate={{ scaleX: 1, transition: { duration: 3 } }}
+          whileInView={{ scaleX: 1, transition: { duration: 3 } }}
           className="h-[4px] w-[70%] bg-[#ea5285]  mt-5 ml-2 rounded-b-xs"
         ></motion.div>
       </div>
@@ -50,7 +50,14 @@ const KindWords = () => {
           {reviews.map((review, index) => (
             <div key={review.name + index}>
               <motion.div className="rounded-sm p-6 md:p-8 h-[310px] w-[350px] lg:w-[380px] bg-white shadow-lg flex flex-col justify-center items-center gap-6">
-                <motion.div>
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 2 + index * (Math.random() * 0.5), repeat: Infinity, repeatType: "reverse" },
+                  }}
+                >
                   <Image
                     src={"/icons/quote.svg"}
                     alt="double quote"

@@ -1,16 +1,20 @@
 import React from "react";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 const OurStory = () => {
   return (
     <>
-      <div id="about" className="min-h-[100vh] pt-6 w-full flex flex-col md:flex-row lg:p-[80px] items-center justify-center gap-4">
+      <div
+        id="about"
+        className="min-h-[100vh] pt-6 w-full flex flex-col md:flex-row lg:p-[80px] items-center justify-center gap-4"
+      >
         <div className="flex flex-col items-center  p-5 md:items-start md:w-[80vw] justify-top gap-4">
           <motion.div className=" text-5xl md:text-7xl text-[#1F2937] overflow-hidden">
             Our Story
             <motion.div
               initial={{ scaleX: 0 }}
-              animate={{ scaleX: 1, transition: { duration: 3 } }}
+              whileInView={{ scaleX: 1, transition: { duration: 3 } }}
               className="h-[4px] w-[70%] bg-[#ea5285] mt-1 ml-2 rounded-b-xs"
             ></motion.div>
           </motion.div>
@@ -27,8 +31,14 @@ const OurStory = () => {
             expectations. From intimate gatherings to grand affairs, we approach
             each wedding with fresh eyes and boundless creativity.
           </p>
-          <motion.button className="bg-[#ea5285] p-0.5 px-3 h-[44px] border-0 rounded-xs">
-            Learn More About Us
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="bg-[#ea5285] p-0.5 px-3 h-[44px] border-0 rounded-xs"
+          >
+            <Link href={"#services"} className="cursor-default">
+              Learn More About Us
+            </Link>
           </motion.button>
         </div>
         <div className="grid grid-cols-2 w-full h-[50vh] md:h-[60vh] lg:h-[70vh] gap-2 px-2">
