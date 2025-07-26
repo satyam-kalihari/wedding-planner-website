@@ -4,7 +4,10 @@ import PortfolioGrid from "./PortfolioGrid";
 
 export const Portfolio = () => {
   return (
-    <div className="min-h-[100vh] pt-6 w-full flex flex-col p-5 md:p-[40px] lg:p-[80px] items-center justify-center gap-12">
+    <div
+      id="portfolio"
+      className="min-h-[100vh] pt-6 w-full flex flex-col p-5 md:p-[40px] lg:p-[80px] items-center justify-center gap-12"
+    >
       <div className="">
         <h1 className="text-5xl md:text-7xl text-[#1F2937]">Our Portfolio</h1>
         <motion.div

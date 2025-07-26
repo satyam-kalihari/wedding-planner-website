@@ -28,7 +28,10 @@ const reviews = [
 
 const KindWords = () => {
   return (
-    <div className="min-h-[100vh] pt-6 w-[100vw] flex flex-col p-5 md:p-[40px] lg:p-[80px] items-center justify-center gap-12">
+    <div
+      id="testimonials"
+      className="min-h-[100vh] bg-pink-50 pt-6 w-[100vw] flex flex-col p-5 md:p-[40px] lg:p-[80px] items-center justify-center gap-12"
+    >
       <div>
         <h1 className="text-5xl md:text-7xl text-[#1F2937] overflow-hidden">
           Kind Words

@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 const OurStory = () => {
   return (
     <>
-      <div className="min-h-[100vh] pt-6 w-full flex flex-col md:flex-row lg:p-[80px] items-center justify-center gap-4">
+      <div id="about" className="min-h-[100vh] pt-6 w-full flex flex-col md:flex-row lg:p-[80px] items-center justify-center gap-4">
         <div className="flex flex-col items-center  p-5 md:items-start md:w-[80vw] justify-top gap-4">
           <motion.div className=" text-5xl md:text-7xl text-[#1F2937] overflow-hidden">
             Our Story
