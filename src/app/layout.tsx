@@ -75,7 +75,11 @@ export default function RootLayout({
       <head>
         {/* Preload the LCP image for faster loading. */}
         {/* TODO: Replace '/images/hero-background.jpg' with the actual path to your LCP image. */}
-        <link rel="preload" href="/public/images/og-image-wedding.png" as="image" />
+        <link
+          rel="preload"
+          href="/public/images/og-image-wedding.png"
+          as="image"
+        />
       </head>
       <body className={`${fontVariables} antialiased`}>
         <LenisProvider>{children}</LenisProvider>
