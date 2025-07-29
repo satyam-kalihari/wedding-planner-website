@@ -29,7 +29,7 @@ body {
   font-family: var(--font-sans);
 }
 
-#reviews::-webkit-scrollbar {
+#reviews::-webkit-scrollbar, .portfolio-grid::-webkit-scrollbar {
   display: none; /* or width: 0; */
 }
 

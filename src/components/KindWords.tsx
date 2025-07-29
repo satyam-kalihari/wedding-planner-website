@@ -6,21 +6,21 @@ const reviews = [
   {
     content:
       "They have completely justified their organisation name” Perfect events and wedding planner “. Entire arrangement was done flawlessly. Thank you so much for making the function memorable.",
-    image: "/images/kind-words-image-1.jpg",
+    image: "/icons/undraw_female-avatar_7t6k.svg",
     name: "Konica Bhardwaj",
     date: "April 2025",
   },
   {
     content:
       "Working with Oshin and team made our wedding planning stress-free! From the initial consultation to the big day, they handled everything seamlessly, allowing us to enjoy every moment. Highly recommended!",
-    image: "/images/kind-words-image-2.jpg",
+    image: "/icons/undraw_professional-woman-avatar_ivds.svg",
     name: "Monika Dongre",
     date: "2024",
   },
   {
     content:
       "Trust worthy. Oshin personally ensured that both the planning process and the day itself felt effortless for us, so we could focus on making memories . Perfect events team was our wedding angel and we cannot recommend her more highly.",
-    image: "/images/kind-words-image-3.jpg",
+    image: "/icons/undraw_woman_nxse.svg",
     name: "ASHWINI RATHOD",
     date: "2024",
   },
@@ -55,7 +55,11 @@ const KindWords = () => {
                   whileInView={{
                     opacity: 1,
                     y: 0,
-                    transition: { duration: 2 + index * (Math.random() * 0.5), repeat: Infinity, repeatType: "reverse" },
+                    transition: {
+                      duration: 2 + index * (Math.random() * 0.5),
+                      repeat: Infinity,
+                      repeatType: "reverse",
+                    },
                   }}
                 >
                   <Image
