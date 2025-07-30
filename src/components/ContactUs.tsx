@@ -7,7 +7,7 @@ const ContactUs = () => {
   const instaLink =
     "https://www.instagram.com/nagpurs_perfect_weddingplanner?igsh=MXR0aGduMXM0ZzhicQ== ";
   const googleLink = "https://g.co/kgs/TuRshJ";
-  
+
   return (
     <div
       id="contact"
@@ -52,7 +52,7 @@ const ContactUs = () => {
                 </div>
                 <div>
                   <h3 className="text-[#1F2937]">Email</h3>
-                  <p>hello@perfectwedding.com</p>
+                  <p>theperfectplanner14@gmail.com</p>
                 </div>
               </div>
               {/* PHONE */}
@@ -85,8 +85,11 @@ const ContactUs = () => {
                 <div>
                   <h3 className="text-[#1F2937]">Office</h3>
                   <p>
-                    123 Wedding Lane Suite
-                    <br /> 200 San Francisco, CA 94105
+                    52, Naik nagar,
+                    <br />
+                    Gurukrupa housing society,
+                    <br />
+                    Manewada ring road, Nagpur - 440027
                   </p>
                 </div>
               </div>
@@ -131,14 +134,17 @@ const ContactUs = () => {
                   alt="icon"
                 />
               </motion.div>
+              {/* WHATSAPP */}
               <motion.div
-                onClick={() => window.open("", "_blank")}
+                onClick={() =>
+                  window.open("https://wa.me/919665510693/", "_blank")
+                }
                 className="bg-[#ea5285] shadow-lg shadow-gray-400 h-[32px] w-[32px] md:h-[64px] md:w-[64px] flex items-center justify-center rounded-full"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <Image
-                  src={"/icons/facebook.svg"}
+                  src={"/icons/whatsapp.svg"}
                   width={18}
                   height={32}
                   alt="icon"

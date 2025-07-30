@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   description:
     "Expert wedding planners based in Nagpur, Maharashtra, specializing in bespoke, luxury Indian weddings and unforgettable celebrations. From intimate gatherings to grand events, we bring your dream day to life. Contact us for a free consultation!",
   keywords:
-    "wedding planner Nagpur, luxury weddings Maharashtra, destination weddings India, wedding coordinator Nagpur, event management Nagpur, bespoke weddings, Indian wedding planner, wedding decorator Nagpur, pre-wedding planning, post-wedding events",
+    "wedding planner Nagpur, luxury weddings Maharashtra, destination weddings India, wedding coordinator Nagpur, event management Nagpur, bespoke weddings, Indian wedding planner, wedding decorator Nagpur, pre-wedding planning, post-wedding events, event nagpur, nagpur",
   authors: [{ name: "PerfectEvent & Weddings" }],
   creator: "PerfectEvent & Weddings",
   publisher: "PerfectEvent & Weddings",
@@ -36,11 +36,11 @@ export const metadata: Metadata = {
       "PerfectEvent & Weddings | Luxury Wedding Planner in Nagpur, Maharashtra",
     description:
       "Discover premier wedding planning services in Nagpur, Maharashtra. Our experienced team offers full-service event design, coordination, and management for truly magical and stress-free weddings.",
-    url: "https://www.your-domain.com", // TODO: Replace with your actual domain
+    url: "https://www.your-domain.com", //Replace with your actual domain
     siteName: "PerfectEvent & Weddings",
     images: [
       {
-        url: "/images/og-image-wedding.png", // Path relative to the 'public' directory
+        url: "/images/og-image-wedding.png",
         width: 1200,
         height: 630,
         alt: "Beautiful wedding planned by PerfectEvent & Weddings",
