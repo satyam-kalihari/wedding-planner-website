@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-2xl font-semibold mb-4 text-pink-300">
-              PerfectEvent &<br/> Weddings
+              PerfectEvent &<br /> Weddings
             </h3>
             <p className="text-gray-300 text-sm">
               Crafting unforgettable moments and making your wedding dreams a
@@ -78,8 +78,8 @@ const Footer = () => {
             </h4>
             <address className="not-italic space-y-2 text-gray-300">
               <p>
-                <i className="fas fa-map-marker-alt mr-2"></i> 123 Wedding
-                Avenue, Dream City, India
+                <i className="fas fa-map-marker-alt mr-2"></i>52, Naik nagar,
+                Gurukrupa housing society, Manewada ring road, Nagpur - 440027
               </p>
               <p>
                 <i className="fas fa-phone mr-2"></i>{" "}
@@ -87,7 +87,7 @@ const Footer = () => {
                   href="tel:+919876543210"
                   className="hover:text-pink-300 transition-colors"
                 >
-                  +91 9665510693
+                  +91 9665510693, +91 7720076200
                 </a>
               </p>
               <p>
@@ -96,7 +96,7 @@ const Footer = () => {
                   href="mailto:info@dreamweavers.com"
                   className="hover:text-pink-300 transition-colors"
                 >
-                  info@dreamweavers.com
+                  theperfectplanner14@gmail.com
                 </a>
               </p>
             </address>

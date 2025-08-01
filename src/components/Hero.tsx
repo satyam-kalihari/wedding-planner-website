@@ -21,7 +21,7 @@ const Hero = () => {
           <motion.div
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="bg-[#ea5285] cursor-default p-0.5 px-1.5 rounded-xs border-2 border-[#ea5285] "
+            className="bg-[#ea5285] w-[170px] text-center cursor-default p-0.5 px-1.5 rounded-xs border-2 border-[#ea5285] "
           >
             Discover Our Services
           </motion.div>
@@ -30,7 +30,7 @@ const Hero = () => {
           <motion.div
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="border-2 border-[#fffbeb] p-0.5 px-1.5 rounded-xs backdrop-blur-xs "
+            className="border-2 w-[170px] text-center border-[#fffbeb] p-0.5 px-1.5 rounded-xs backdrop-blur-xs "
           >
             View Our Work
           </motion.div>

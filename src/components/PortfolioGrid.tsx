@@ -74,7 +74,7 @@ const PortfolioGrid = () => {
             key={topic}
             onClick={() => setSelectedTopic("some" + topic)}
             className={`capitalize border-1 h-[38px] border-[#D1D5DB] text-[#1F2937] py-2 px-3 md:px-5 rounded-xs transition-colors duration-300 ${
-              selectedTopic === topic
+              selectedTopic === "some"+topic
                 ? "bg-[#ea5285] text-white border-[#ea5285]"
                 : ""
             }`}
