@@ -1,0 +1,8 @@
+# Tells search engine crawlers to follow all rules
+User-agent: *
+
+# Tells crawlers to index all pages on the site
+Allow: /
+
+# Sitemap location for crawlers to find all your pages
+Sitemap: https://perfecteventandweddingplanner.in/sitemap.xml

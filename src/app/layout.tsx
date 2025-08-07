@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import LenisProvider from "@/components/LenisProvider";
 import localFont from "next/font/local";
+import WeddingSchema from "@/components/WeddingSchema";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,40 +23,61 @@ const cormorantGaramond = localFont({
 
 export const metadata: Metadata = {
   title:
-    "PerfectEvent & Weddings | Luxury Wedding Planner in Nagpur, Maharashtra",
+    "PerfectEvent & Weddings | Best Wedding Planners in Nagpur | Maharashtra",
   description:
-    "Expert wedding planners based in Nagpur, Maharashtra, specializing in bespoke, luxury Indian weddings and unforgettable celebrations. From intimate gatherings to grand events, we bring your dream day to life. Contact us for a free consultation!",
-  keywords:
-    "wedding planner Nagpur, luxury weddings Maharashtra, destination weddings India, wedding coordinator Nagpur, event management Nagpur, bespoke weddings, Indian wedding planner, wedding decorator Nagpur, pre-wedding planning, post-wedding events, event nagpur, nagpur",
-  authors: [{ name: "PerfectEvent & Weddings" }],
+    "Nagpur's top-rated wedding planning agency specializing in luxury Indian weddings. Full-service event management for stress-free celebrations. Get free consultation today!",
+  keywords: [
+    "best wedding planner in Nagpur",
+    "luxury wedding planners Maharashtra",
+    "affordable wedding organizers Nagpur",
+    "corporate event management Nagpur",
+    "destination wedding planners India",
+    "Nagpur wedding decorators",
+    "Maharashtra wedding coordinators",
+    "pre-wedding shoot locations Nagpur",
+    "wedding venue booking Nagpur",
+    "bridal makeup artists Nagpur",
+    "wedding catering services Nagpur",
+  ].join(", "),
+  authors: [
+    {
+      name: "PerfectEvent & Weddings",
+      url: "https://perfecteventandweddingplanner.in",
+    },
+  ],
   creator: "PerfectEvent & Weddings",
   publisher: "PerfectEvent & Weddings",
   robots: "index, follow",
+  alternates: {
+    canonical: "https://perfecteventandweddingplanner.in",
+  },
+  metadataBase: new URL("https://perfecteventandweddingplanner.in"),
   openGraph: {
-    title:
-      "PerfectEvent & Weddings | Luxury Wedding Planner in Nagpur, Maharashtra",
+    title: "PerfectEvent & Weddings | Luxury Wedding Planner in Nagpur",
     description:
-      "Discover premier wedding planning services in Nagpur, Maharashtra. Our experienced team offers full-service event design, coordination, and management for truly magical and stress-free weddings.",
-    url: "https://www.your-domain.com", //Replace with your actual domain
+      "Nagpur's premier wedding planning agency creating unforgettable celebrations with complete event management services.",
+    url: "https://perfecteventandweddingplanner.in",
     siteName: "PerfectEvent & Weddings",
     images: [
       {
-        url: "/images/og-image-wedding.png",
+        url: "/images/og-image-wedding.jpg",
         width: 1200,
         height: 630,
-        alt: "Beautiful wedding planned by PerfectEvent & Weddings",
+        alt: "Luxury wedding by PerfectEvent & Weddings in Nagpur",
       },
     ],
     locale: "en_IN",
     type: "website",
+    emails: ["theperfectplanner14@gmail.com"],
+    phoneNumbers: ["+919665510693"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "PerfectEvent & Weddings | Your Dream Day, Flawlessly Planned",
+    title: "PerfectEvent & Weddings | Nagpur's Wedding Experts",
     description:
-      "Crafting unforgettable moments and making your wedding dreams a beautiful reality in Nagpur and across India.",
-    images: ["/images/og-image-wedding.png"], // Path relative to the 'public' directory
-    creator: "@YourTwitterHandle", // TODO: Replace with your actual Twitter handle
+      "Creating magical weddings in Nagpur with complete planning and coordination services.",
+    images: ["/images/og-image-wedding.jpg"],
+    creator: "@PerfectEventNagpur",
   },
 };
 
@@ -73,15 +95,27 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        {/* Preload the LCP image for faster loading. */}
-        {/* TODO: Replace '/images/hero-background.jpg' with the actual path to your LCP image. */}
         <link
           rel="preload"
-          href="/public/images/og-image-wedding.png"
+          href="/images/hero-banner.webp"
           as="image"
+          imageSrcSet="
+            /images/og-image-wedding.webp 400w,
+            /images/og-image-wedding.webp 800w,
+            /images/og-image-wedding.webp 1200w
+          "
+          imageSizes="100vw"
         />
+        <meta name="geo.region" content="IN-MH" />
+        <meta name="geo.placename" content="Nagpur" />
+        <meta name="geo.position" content="21.149813;79.082056" />
+        <meta name="ICBM" content="21.149813, 79.0808205682" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className={`${fontVariables} antialiased`}>
+        <WeddingSchema />
         <LenisProvider>{children}</LenisProvider>
       </body>
     </html>
