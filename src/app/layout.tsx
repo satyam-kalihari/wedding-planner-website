@@ -5,6 +5,7 @@ import "./globals.css";
 import LenisProvider from "@/components/LenisProvider";
 import localFont from "next/font/local";
 import WeddingSchema from "@/components/WeddingSchema";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -117,6 +118,7 @@ export default function RootLayout({
       <body className={`${fontVariables} antialiased`}>
         <WeddingSchema />
         <LenisProvider>{children}</LenisProvider>
+        <Analytics />
       </body>
     </html>
   );
